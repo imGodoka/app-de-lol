@@ -74,7 +74,7 @@ html, body {
 	}
 }
 
-a, a:visited {
+a, a:visited, a:hover {
 	text-decoration: none;
 }
 
@@ -97,5 +97,28 @@ a {
 	font-family: 'titilliumregular';	
 	font-size: 1.3em;
 	text-align: justify;
+	color: #53606e;
 	
+}
+
+#desc a {
+	text-align: right;
+	color: #373e47;
+}
+
+#desc a:hover {
+	color: #9eecc2;	
+}
+
+#desc h2 {
+	font-family: 'titilliumbold';
+	font-size: 1.5em;
+}
+
+#cont {
+	margin-bottom: 10%;
+}
+
+.cn {
+	text-align: center;
 }
