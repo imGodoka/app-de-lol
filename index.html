@@ -17,10 +17,71 @@
 	<meta name="autocomplete" content="off">
 	<link href="css/styles.css" rel="stylesheet" type="text/css" />
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
 <body>
+<div class="col-md-12 bg"></div><div id="effport"></div>
+	<section id="secform" class="secform" >
+		<form class="form-horizontal">
+			<fieldset>
+			<!-- Text input-->
+				<div class="form-group">
+				  <label class="col-md-12 control-label lblindex" id="lbl" for="nameinpt">Nome de Invocador</label>
+				  <div class="col-md-12">
+				  <input id="nameinpt" name="nameinpt" type="text" placeholder="Nome de Invocador" class="form-control input-md fieldjanna" required="">
+				  </div>
+				</div>
 
+				<!-- Password input-->
+				<div class="form-group">
+				  <label class="col-md-12 control-label lblindex"  id="lbl2" for="passwordinpt">Senha</label>
+				  <div class="col-md-12">
+					<input id="passwordinpt" name="passwordinpt" type="password" placeholder="Senha" class="form-control input-md fieldjanna" required="">
+					
+				  </div>
+				</div>
+
+				<!-- Button -->
+				<div class="form-group">
+				  <div class="col-md-12">
+					<button id="submitbtn" name="submitbtn" class="btn btn-default">Login</button>
+				  </div>
+				</div>
+
+			</fieldset>
+		</form>
+
+
+</section>
+
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("input").focus(function(){
+ $(".bg").css("-webkit-filter", "blur(2px)");
+ $(".bg").css("-moz-filter", "blur(2px)");
+ $(".bg").css("-o-filter", "blur(2px)");
+ $(".bg").css("-ms-filter", "blur(2px)");
+ $(".bg").css("filter", "blur(2px)");
+    });
+
+$("input").blur(function(){
+ $(".bg").css("-webkit-filter", "blur(0px)");
+ $(".bg").css("-moz-filter", "blur(0px)");
+ $(".bg").css("-o-filter", "blur(0px)");
+ $(".bg").css("-ms-filter", "blur(0px)");
+ $(".bg").css("filter", "blur(0px)");
+});
+
+
+});
+</script>
 </body>
 
 </html>
